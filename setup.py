@@ -36,5 +36,5 @@ setuptools.setup(
         "Source": "https://github.com/de-centralized-systems/python-bip39toolkit/",
         "Bug Tracker": "https://github.com/de-centralized-systems/python-bip39toolkit/issues",
     },
-    python_requires=">=3.9.16",
+    python_requires=">=3.9.0",
 )
