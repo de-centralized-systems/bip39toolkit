@@ -3,6 +3,7 @@
 .vscode/
 .venv/
 .pytest_cache/
+.python-version
 *.egg-info/
 dist/
 build/
