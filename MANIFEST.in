@@ -1,0 +1,6 @@
+include VERSION
+include tests/bip39_testvectors.json
+include tests/test_bip39.py
+include tests/test_core.py
+include tests/test_helpers.py
+include tests/test_interface.py

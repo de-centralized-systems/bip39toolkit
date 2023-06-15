@@ -1,0 +1,5 @@
+build
+pytest
+pytest-cov
+setuptools
+twine
