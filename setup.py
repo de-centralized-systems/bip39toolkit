@@ -15,7 +15,7 @@ def read(filename: str) -> str:
 setuptools.setup(
     name=PACKAGE_NAME,
     version=read("VERSION"),
-    description=read("README.md").splitlines()[3].strip(),
+    description=read("README.md").splitlines()[1].strip(),
     url="https://github.com/de-centralized-systems/python-bip39toolkit/",
     long_description=read("README.md"),
     long_description_content_type="text/markdown",
