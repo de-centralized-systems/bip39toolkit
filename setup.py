@@ -1,8 +1,9 @@
 import pathlib
 import setuptools
 
+import bip39toolkit
 
-PACKAGE_NAME = "bip39toolkit"
+
 PROJ_DIR = pathlib.Path(__file__).absolute().parent
 
 
@@ -13,9 +14,12 @@ def read(filename: str) -> str:
 
 
 setuptools.setup(
-    name=PACKAGE_NAME,
-    version=read("VERSION"),
-    description="The BIP39 toolkit is a self-contained command line application, which provides an interface to generate, secret share and recover BIP39 mnemonic phrases.",
+    name=bip39toolkit.__name__,
+    version=bip39toolkit.VERSION,
+    description=(
+        "The BIP39 toolkit is a self-contained command line application, "
+        "which provides an interface to generate, secret share and recover BIP39 mnemonic phrases."
+    ),
     url="https://github.com/de-centralized-systems/python-bip39toolkit/",
     long_description=read("README.md"),
     long_description_content_type="text/markdown",

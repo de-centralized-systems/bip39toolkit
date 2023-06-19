@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 from __future__ import annotations
 
+VERSION = "0.1.0"
+
+
 import collections
 import hashlib
 import hmac
@@ -712,10 +715,10 @@ FLAGS: set[str] = set(itertools.chain.from_iterable(FLAGS_BY_COMMAND.values()))
 KEYWORD_ARGS: set[str] = set(itertools.chain.from_iterable(KEYWORD_ARGS_BY_COMMAND.values()))
 
 
-USAGE = """
+USAGE = f"""
 Usage: %(program)s [options] command [command_args]
 
-BIP39 toolkit version: 0.1.0
+BIP39 toolkit version: {VERSION}
 
 The BIP39 toolkit provides a set of commands to generate new BIP39 phrases, share and recover BIP39 phrases using Shamir Secret Sharing, and covert between various entropy formats and BIP39 phrases.
 
@@ -729,7 +732,6 @@ Available commands:
 Options:
   -h, --help     show this help message and exit, additional information is available for each command
   --quiet        suppress all non-essential output
-
 """
 
 USAGE_GENERATE = """
