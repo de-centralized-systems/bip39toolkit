@@ -20,7 +20,7 @@ clean:
 	rm -rf bip39toolkit.egg-info/
 	rm -rf build/
 	rm -rf dist/
-	rm -rf doc/
+	#rm -rf doc/
 	rm -rf __pycache__/
 	rm -rf tests/__pycache__/
 	rm -rf .pytest_cache/
