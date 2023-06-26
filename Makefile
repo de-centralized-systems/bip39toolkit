@@ -20,7 +20,7 @@ clean:
 	rm -rf bip39toolkit.egg-info/
 	rm -rf build/
 	rm -rf dist/
-	#rm -rf doc/
+	rm -rf docs/coverage-report
 	rm -rf __pycache__/
 	rm -rf tests/__pycache__/
 	rm -rf .pytest_cache/
@@ -29,7 +29,7 @@ clean:
 
 .PHONY: coverage
 coverage:
-	$(PYTHON) -m pytest --cov-report html:doc/coverage-report --cov bip39toolkit tests/
+	$(PYTHON) -m pytest --cov-report html:docs/coverage-report --cov bip39toolkit tests/
 
 
 .PHONY: test
