@@ -2,7 +2,10 @@
 
 The BIP39 toolkit is a self-contained command line application, which provides an interface to **generate**, secret **share** and **recover** BIP39 mnemonic phrases. The explicit goal of the tool is it to keep compatibility with the [BIP39 mnemonic format](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) and allow for sharing (and recovering) existing BIP39 phrases. 
 
-The software is intend to be executed from a secure offline (ideally air gapped) system. Currently, the implementation supports various Linux based platforms and requires Python 3.10.6 or higher.
+The software is intend to be executed from a secure offline (ideally air gapped) system. 
+For an inspiration on how to write down the resulting mnemonic shares you can look at the preliminary template in the [docs](https://github.com/de-centralized-systems/bip39toolkit/tree/main/docs/templates) folder.
+
+Currently, the implementation supports various Linux based platforms and requires Python 3.10.6 or higher.
 
 Hard- and software implementations using BIP39 often lack the support of non-English BIP39 phrases. We also limit the BIP39 toolkit to only support widely-established English BIP39 phrases. 
 
